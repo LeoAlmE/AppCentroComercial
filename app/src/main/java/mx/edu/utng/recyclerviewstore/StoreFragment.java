@@ -78,19 +78,18 @@ public class StoreFragment extends Fragment {
             mStore = StoreLab.get(getContext());
 
             try {
-                Store store = new Store();
+                /*Store store = new Store();
                 store.setNombre("American Eagle");
                 store.setUrlPhoto("https://medias.fashionnetwork.com/image/upload/v1/medias/b4b7ed5f444e91b595b3bec102d6bd262980494.jpg");
                 store.setValoracion(4f);
                 store.setDireccion("Local 24 Planta 1");
                 mStore.addStore(store);
-
                 Store store2 = new Store();
                 store2.setNombre("Calvin Klein");
                 store2.setUrlPhoto("https://www.modaes.com/files/000_2016/calvin%20klein/calvin%20klein%20tienda948.jpg");
                 store2.setValoracion(4f);
                 store2.setDireccion("Local 10 Planta 3");
-                mStore.addStore(store2);
+                mStore.addStore(store2);*/
             }catch (Exception e){
                 Toast.makeText(getContext(), "Error: "+e.getMessage(),Toast.LENGTH_LONG).show();
             }

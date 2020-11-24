@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="mx.edu.utng.recyclerviewstore.NuevoActivity"></activity>
+        <activity android:name="mx.edu.utng.recyclerviewstore.EliminarActivity"></activity>
         <activity android:name="mx.edu.utng.recyclerviewstore.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

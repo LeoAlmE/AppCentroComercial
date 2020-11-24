@@ -59,9 +59,13 @@ public class NuevoActivity extends AppCompatActivity {
         btnEliminar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intNuevo = new Intent(NuevoActivity.this, EliminarActivity.class);
-                startActivity(intNuevo);
-                finish();
+                try{
+                    Intent intNuevo = new Intent(NuevoActivity.this, EliminarActivity.class);
+                    startActivity(intNuevo);
+                    finish();
+                }catch (Exception e){
+                    Toast.makeText(NuevoActivity.this, "Error 1: " + e.getMessage(),Toast.LENGTH_LONG).show();
+                }
             }
         });
 

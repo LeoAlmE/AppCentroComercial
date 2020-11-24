@@ -23,7 +23,11 @@ public class EliminarActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_eliminar);
+        try{
+            setContentView(R.layout.activity_eliminar);
+        }catch (Exception e) {
+            Toast.makeText(EliminarActivity.this, "Error 2: " + e.getMessage(), Toast.LENGTH_LONG).show();
+        }
 
         btnEliminarTienda = (Button) findViewById(R.id.btnEliminarTienda);
         EditText etNombre = findViewById(R.id.etNombre2);
@@ -37,7 +41,7 @@ public class EliminarActivity extends AppCompatActivity {
                     Toast.makeText(EliminarActivity.this, "Tienda eliminada: " + etNombre.getText().toString(), Toast.LENGTH_LONG).show();
 
                 } catch (Exception e) {
-                    Toast.makeText(EliminarActivity.this, "Error: " + e.getMessage(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(EliminarActivity.this, "Error al eliminar: " + e.getMessage(), Toast.LENGTH_LONG).show();
                 }
 
             }
